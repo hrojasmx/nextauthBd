@@ -1,5 +1,6 @@
 import { useSession, signIn, signOut, getSession } from "next-auth/react";
 import { NextPage, NextPageContext } from "next";
+import Image from "next/image";
 
 // localhost:3000/api/auth/signin
 // localhost:3000/api/auth/signout
@@ -22,10 +23,10 @@ export default function Home() {
 
               <h4>{session?.user?.email}</h4>
 
-              <button onClick={() => signOut()}>SIGN OUT</button>
+              <button onClick={ () => signOut() }>SIGN OUT</button>
             </div>
         ) : (
-            <button onClick={() => signIn()}>SIGN IN</button>
+            <button onClick={ () => signIn() }>SIGN IN</button>
         )}
       </div>
     </>
