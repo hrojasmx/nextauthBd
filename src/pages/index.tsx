@@ -15,11 +15,11 @@ export default function Home() {
             <div className="flex flex-col gap-1 items-center">
               <h2>{session?.user?.name}</h2>
 
-              <img
-                  src={session?.user?.image!}
-                  alt=""
-                  className="w-32 h-32 rounded-full"
-              />
+              {/*<img*/}
+              {/*    src={session?.user?.image!}*/}
+              {/*    alt=""*/}
+              {/*    className="w-32 h-32 rounded-full"*/}
+              {/*/>*/}
 
               <h4>{session?.user?.email}</h4>
 
